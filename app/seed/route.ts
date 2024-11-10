@@ -101,11 +101,11 @@
    return insertedRevenue;
  }
 
-/*export async function GET() {
-  return Response.json({
-    message:
-      'Uncomment this file and remove this line. You can delete this file when you are finished.',
-  });*/
+ export async function GET() {
+  //return Response.json({
+    //message:
+      //'Uncomment this file and remove this line. You can delete this file when you are finished.',
+  //});
    try {
      await client.sql`BEGIN`;
      await seedUsers();
@@ -119,4 +119,4 @@
      await client.sql`ROLLBACK`;
      return Response.json({ error }, { status: 500 });
    }
-//}
+}
