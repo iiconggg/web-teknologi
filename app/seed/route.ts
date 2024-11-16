@@ -4,6 +4,8 @@
 
  const client = await db.connect();
 
+
+ 
  async function seedUsers() {
    await client.sql`CREATE EXTENSION IF NOT EXISTS "uuid-ossp"`;
    await client.sql`
