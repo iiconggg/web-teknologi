@@ -74,9 +74,9 @@ export default function Page() {
                             </div>
                         </div>
                     </div>
-                    <button className="mt-4 w-full">
+                    <Button className="mt-4 w-full">
                         Masuk <ArrowRightIcon className="ml-auto h-5 w-5 text-gray-50" />
-                    </button>
+                    </Button>
                     <div className="flex h-8 items-end space-x-1">
                         {errorMessage &&(
                             <>
