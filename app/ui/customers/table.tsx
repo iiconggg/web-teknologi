@@ -4,12 +4,13 @@ import Search from '@/app/ui/search';
 import {
   CustomersTableType,
   FormattedCustomersTable,
+  Customer
 } from '@/app/lib/definitions';
 
 export default async function CustomersTable({
   customers,
 }: {
-  customers: FormattedCustomersTable[];
+  customers: Customer[];
 }) {
   return (
     <div className="w-full">
@@ -46,7 +47,7 @@ export default async function CustomersTable({
                         </p>
                       </div>
                     </div>
-                    <div className="flex w-full items-center justify-between border-b py-5">
+                    {/*<div className="flex w-full items-center justify-between border-b py-5">
                       <div className="flex w-1/2 flex-col">
                         <p className="text-xs">Pending</p>
                         <p className="font-medium">{customer.total_pending}</p>
@@ -59,6 +60,7 @@ export default async function CustomersTable({
                     <div className="pt-4 text-sm">
                       <p>{customer.total_invoices} invoices</p>
                     </div>
+                    </div>*/}
                   </div>
                 ))}
               </div>
@@ -71,7 +73,7 @@ export default async function CustomersTable({
                     <th scope="col" className="px-3 py-5 font-medium">
                       Email
                     </th>
-                    <th scope="col" className="px-3 py-5 font-medium">
+                    {/*<th scope="col" className="px-3 py-5 font-medium">
                       Total Invoices
                     </th>
                     <th scope="col" className="px-3 py-5 font-medium">
@@ -79,7 +81,7 @@ export default async function CustomersTable({
                     </th>
                     <th scope="col" className="px-4 py-5 font-medium">
                       Total Paid
-                    </th>
+                    </th>*/}
                   </tr>
                 </thead>
 
@@ -101,7 +103,7 @@ export default async function CustomersTable({
                       <td className="whitespace-nowrap bg-white px-4 py-5 text-sm">
                         {customer.email}
                       </td>
-                      <td className="whitespace-nowrap bg-white px-4 py-5 text-sm">
+                      {/*<td className="whitespace-nowrap bg-white px-4 py-5 text-sm">
                         {customer.total_invoices}
                       </td>
                       <td className="whitespace-nowrap bg-white px-4 py-5 text-sm">
@@ -109,7 +111,7 @@ export default async function CustomersTable({
                       </td>
                       <td className="whitespace-nowrap bg-white px-4 py-5 text-sm group-first-of-type:rounded-md group-last-of-type:rounded-md">
                         {customer.total_paid}
-                      </td>
+                      </td>*/}
                     </tr>
                   ))}
                 </tbody>
